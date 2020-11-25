@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='OxygenMLP',
     version='0.2',
-    packages=find_packages(exclude=['tests*']),
+    packages=find_packages(exclude=['tests*'], include=['core/bestModels.pkl']),
 #    license='MIT',
     description='neural network, multi-layer perceptron model that can predict oxygen abundance using strong emission lines',
     long_description=open('README.md').read(),
